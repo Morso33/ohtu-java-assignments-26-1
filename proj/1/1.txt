@@ -1,0 +1,27 @@
+A) Supermarket checkout system
+
+B) Traffic at an intersection
+
+C) Hospital emergency department
+
+Why simulation is appropriate?
+
+Real-world experimentation is expensive and disruptive
+    You can’t easily shut down a supermarket or hospital to test different staffing levels.
+    Changing traffic lights experimentally could cause congestion or accidents.
+
+The system contains randomness
+    Arrival times of customers
+    Service times vary between individuals
+    Traffic flow fluctuates throughout the day
+
+Time savings
+    A simulation can model weeks or months in seconds.
+    Real-world testing would take too long.
+
+Risk-free experimentation
+    Poor decisions in a simulation have no real-world consequences.
+    You can safely test worst-case scenarios.
+
+Example:
+A supermarket simulation can minimize energy use by optimizing opening hours and staffing while keeping customer wait times acceptable.

@@ -1,0 +1,19 @@
+Real-world operational system analysis: Supermarket
+Variability
+
+Customer arrival times vary randomly
+    Different customers need different service times
+    Number of items per customer varies
+    Peak hours vs off-peak hours
+
+Complexity
+    Multiple checkout counters
+    Different types of customers (few items vs many items)
+    Staff schedules and breaks
+    Interaction between queue length and customer behavior (leaving if too long)
+
+Interconnectedness
+    Checkout queues affect customer satisfaction
+    Staffing decisions affect waiting times
+    Waiting times affect customer arrival patterns
+    Energy usage depends on number of open checkouts
