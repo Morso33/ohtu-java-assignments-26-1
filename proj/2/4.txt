@@ -1,0 +1,13 @@
+Uniform	Equal probability       | Dice rolls, random IDs
+Normal	Natural variation       | Heights, exam scores
+Exponential	Time between events	| Time between customer arrivals
+Poisson	Number of events        | Calls per hour at a call center
+Binomial Success/failure counts | Defective items in a batch      
+------------------------------------------------------------------
+Normal distribution example:
+Human height
+Measurement errors
+IQ scores
+Exponential distribution:
+Waiting time until next customer
+Time until system failure

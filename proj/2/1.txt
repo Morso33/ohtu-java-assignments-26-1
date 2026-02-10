@@ -1,0 +1,18 @@
+I decided to use an inverse transform method for discrete distributions.
+
+For each of the 1000 samples we draw a uniform random integer x from the range [1, 100]
+
+Then I'll map the results to age value
+
+Next I'll scan the cumulative distribution table from top to bottom, and select the age corresponding to the first row where x ≤ cumulative limit
+
+Next let's record the result.
+
+1. Store the generated age value
+2. Increment a counter for that age
+
+Then I'll run the above code in a for loop 1000 times.
+
+Then just count how many times each age was generated (out of 1000)
+1. Calculate percentages: (count / 1000) × 100%
+2. Compare the generated distribution to the original probability distribution

@@ -1,0 +1,5 @@
+A Singleton prevents external instantiation by:
+1. Making its constructor private
+2. Providing controlled access via a static method
+
+If a singleton was created twice it would no longer be a singleton, thus the JVM does not allow it.
