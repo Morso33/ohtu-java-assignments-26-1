@@ -1,0 +1,53 @@
+//Written as C-style pseudocode
+
+// ----- Global Variables -----
+double clock = 0.0;
+double simulationEndTime;
+
+EventList eventList;
+ServicePoint servicePoints[MAX_SERVERS];
+Queue queues[MAX_SERVERS];
+
+// ----- Main Simulation Function -----
+void runSimulation() {
+
+    initializeSimulation();
+
+    while (clock < simulationEndTime && !eventList.isEmpty()) {
+
+        // =========================
+        // A-PHASE: Time Advance
+        // =========================
+        Event nextEvent = eventList.removeNext();
+        clock = nextEvent.time;
+
+        // =========================
+        // B-PHASE: Execute all events scheduled at this time
+        // =========================
+        executeEvent(nextEvent);
+
+        while (!eventList.isEmpty() &&
+               eventList.peekNext().time == clock) {
+
+            Event sameTimeEvent = eventList.removeNext();
+            executeEvent(sameTimeEvent);
+        }
+
+        // =========================
+        // C-PHASE: Conditional events
+        // =========================
+        for (int i = 0; i < MAX_SERVERS; i++) {
+
+            if (servicePoints[i].isIdle &&
+                !queues[i].isEmpty()) {
+
+                Customer c = queues[i].remove();
+                startService(i, c);
+            }
+        }
+
+        updateStatistics();
+    }
+
+    printResults();
+}

@@ -1,0 +1,54 @@
+Directly Observable Variables
+
+A (Arrived clients count)
+Total number of patients who arrive at the health centre during the simulation time.
+
+C (Completed clients count)
+Total number of patients who finish their appointment and leave.
+
+B (Busy time)
+Total time the doctor is actively treating patients.
+
+T (Total simulation time)
+Total time the health centre is observed (e.g., 8 hours).
+
+Derived Variables
+
+U (Utilization), U = B / T
+Fraction of time the doctor is busy.
+
+If U ≈ 1 → doctor is almost always busy (possible overload).
+
+If U is low → doctor is idle frequently.
+
+X (Throughput), X = C / T
+Number of patients treated per unit time (e.g., patients/hour).
+
+S (Average service time), S = B / C
+Average time a doctor spends treating one patient.
+
+Additional Observable Variables
+
+Ri (Individual response time)
+Time from patient arrival to completion of treatment (waiting + service).
+
+W (Cumulative response time)
+Sum of all patients’ response times.
+
+Further Derived Quantities
+
+R (Average response time), R = W / C
+Average time a patient spends in the system.
+
+N (Average number in system), N = W / T
+Average number of patients in the health centre (waiting + in service).
+
+Interpretation in the Health Centre
+
+High U may indicate overworked staff.
+
+High R means long patient waiting times.
+
+High N means congestion.
+
+Balanced X, U, and R indicate efficient operation.

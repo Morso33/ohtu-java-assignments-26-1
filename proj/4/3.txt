@@ -1,0 +1,37 @@
+System 1: Airport Check-in Process
+
+Passengers go through:
+Document Check
+Baggage Drop
+Security Check
+
+flowchart LR
+    A[ ] --> Q1[(Queue)]
+    Q1 -.- S1((Document Check))
+    S1 --> Q2[(Queue)]
+    Q2 -.- S2((Baggage Drop))
+    S2 --> Q3[(Queue)]
+    Q3 -.- S3((Security Check))
+    S3 --> B[ ]
+
+System 2: Fast Food Restaurant
+
+Customers go through:
+Order Counter
+Payment
+Food Preparation
+Pickup Counter
+
+flowchart LR
+    A[ ] --> Q1[(Queue)]
+    Q1 -.- S1((Order Counter))
+    S1 --> Q2[(Queue)]
+    Q2 -.- S2((Payment))
+    S2 --> Q3[(Queue)]
+    Q3 -.- S3((Food Preparation))
+    S3 --> Q4[(Queue)]
+    Q4 -.- S4((Pickup Counter))
+    S4 --> B[ ]
+
+
+Each service point has its own queue and performance measures.

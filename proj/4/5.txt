@@ -1,0 +1,15 @@
+1.
+Remove earliest event
+Move simulation clock
+Prepare event for execution
+
+2.
+Update system state
+Update counters (A, C, etc.)
+Schedule future events
+
+3.
+Check if server is idle
+Check if queue has customers
+Start service
+Schedule departure event

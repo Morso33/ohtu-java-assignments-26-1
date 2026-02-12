@@ -1,0 +1,37 @@
+---Customer-Based Measures---
+
+Updated when events happen to customers.
+
+Arrival count (A) -> updated at arrival.
+
+Response time (Ri) -> computed at departure.
+
+Waiting time sum (W) -> updated when a customer leaves.
+
+Completed count (C) -> updated at service completion.
+
+These are tied to customer lifecycle events.
+
+---Service Point-Based Measures---
+
+Updated based on service point state changes.
+
+Busy time (B) -> updated when service starts and ends.
+
+Utilization (U) -> computed from busy time.
+
+Service time (S) -> derived from B and C.
+
+These are tied to server state changes (idle <-> busy).
+
+---Time-Averaged Measures---
+
+Depend on accumulated time.
+
+N (average number in system) -> based on time integration.
+
+U -> ratio of busy time to total time.
+
+X -> throughput over time.
+
+These require continuous accumulation over simulation time.
