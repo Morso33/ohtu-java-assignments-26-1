@@ -1,0 +1,12 @@
+{
+"java.project.referencedLibraries": [
+  "C:\\Java\\javafx-sdk-21\\lib\\*.jar"
+  {
+  // ...existing code...
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar"
+  ]
+  // ...existing code...
+}
+]
+}
